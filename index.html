@@ -22,7 +22,7 @@
 				<a href="#presentationtitre" style="text-decoration:none">Histoire</a>
 				<a href="#forfiat" style="text-decoration:none">Tarifs</a>
 				<a href="#contact" style="text-decoration:none">Contact</a>
-			<!--	<a href="" style="text-decoration:none">Nos partenaires</a> -->
+		<!--		<a href="" style="text-decoration:none">Nos partenaires</a> -->
 			</nav>
 		<div/>
 		<div>
@@ -89,6 +89,7 @@
 								    <textarea id="subject" name="subject" placeholder="Votre message..." pattern="[A-Za-z]+ [0-9]+" style="height:100px"></textarea>
 
 									<button>Envoyer</button>
+									<p style="text-align: center; font-family: arial; font-size: 20px;">Si le formulaire s'envoie pas. Veuillez nous écrit en cliquant sur le mail.</p>
 								</form>
 							</div>
 						</div>
@@ -285,7 +286,7 @@ input[type=submit]:hover {
 
 <script>
 	<?php
-	 $retour = mail('alexandrelartificier@gmail.com', 'Envoi depuis le site Free', $_POST['message'], 'From : webmaster@free.fr');
+	 $retour = mail('alexandrelartificier@gmail.com', 'Envoi depuis le site Free', $_POST['message']);
 	 if ($retour) {
 	     echo '<p>Votre message a bien été envoyé !</p>';
 	 }
